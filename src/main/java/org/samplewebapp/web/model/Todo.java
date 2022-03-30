@@ -17,7 +17,23 @@ public class Todo {
 	private String user;
 	private String name;
 	private String age;
-    @Size(min=10, message="Enter at least 10 Characters...")
+    public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+
+	@Size(min=10, message="Enter at least 10 Characters...")
     private String desc;
 
     private Date targetDate;
