@@ -15,7 +15,8 @@ public class Todo {
 	private int id;
     
 	private String user;
-    
+	private String name;
+	private String age;
     @Size(min=10, message="Enter at least 10 Characters...")
     private String desc;
 
